@@ -16,7 +16,7 @@
 // add generate code that was provided
 var generateBtn = document.querySelector("#generate");
 
-// create array of all characters that can be included
+// create variables for all characters that can be included
 // uppercase || lowercase || numbers || special  
 var upperChar = 'abcdefghijklmnopqrstuvwxyz';
 var lowerChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -25,19 +25,28 @@ var symbol = '!@#$^&%*()+=-[]{}~|:<>?,.';
 
 // Function to generate the password
 function writePassword() {
+// create more variables for possible combinations of password and to generate the password
+// use placeholder for empty string with "";
+var possibleChar = "";
+var generatePass = ""; 
 
   // confirm uppercase letter
   var upperConfirm = window.confirm("Click OK to confirm including uppercase letters.");
+  console.log(upperConfirm)
   // confirm lowercase letter
   var lowerConfirm = window.confirm("Click OK to confirm including lowercase letters.");
+  console.log(lowerConfirm)
   // confirm number in password
   var numberConfirm = window.confirm("Click OK to confirm including numeric characters.");
+  console.log(numberConfirm)
   // confirm symbol in password
   var symbolConfirm = window.confirm("Click OK to confirm including special characters.");
+  console.log(symbolConfirm)
 
   // at least one confirm needs to be true to generate password
   if (upperConfirm == false && lowerConfirm == false && numberConfirm == false && symbolConfirm == symbolConfirm) {
     window.alert("Must select letter, number or symbol to continue.")
+    console.log(true)
   }
 
   // if statements - what is confirmed or true -- put that string of numbers in possibleChar 
