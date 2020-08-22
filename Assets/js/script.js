@@ -1,64 +1,60 @@
 // pseudocode
 
-// variables that decide the lowercase, uppercase, numeric, and/or special characters (charsets)
-var uppercase = "ABDCEFGHIJKLMNOPQRSTUVWXYZ";
-var lowercase = uppercase.toLowerCase();
-var special = "!@#$%^&*?-";
-var numbers = "1234567890";
-var password = '';
+// password length - displays a prompt requesting user select password length
+//  ** length prompt
+//  ** number between 8 and 128
+//  ** check for user input -- not a number check
 
-var generateBtn = document.querySelector("#password");
+// user confirms criteria including
+//  ** uppercase, lowercase, special and numbers
 
-// input array
-var userInput = [userSpecial, userNumber, userUpper, userLower]
+// function will run and randomly select (x) character from a string that includes the selections
 
-// add function when button is clicked to generate password
-function generatePassword() {
+// user will receive an alert with the password once its generated
 
-// function with prompt to ask user if they want to include uppercase
-// ** Would you like your password to include uppercase letters?
-var userSpecial = confirm("Would you like your password to include uppercase letters?");
-
-// function with prompt to ask user if they want to include uppercase
-// ** Would you like your password to include lowercase letters?
-
-
-// function with prompt to determine if user wants to include numbers
-// ** Would you like your password to include numbers?
-
-
-// function with prompt to see if user wants to include special characters
-// ** Would you like your password to include special characters?
-
-
-// function with prompt for length of the password
-// ** Enter a number from 8-128 to set the length of your password
-
-
-// function used to take all the input from the previous functions and generate password
-
-
-// validate input and at least one character type should be selected (This should be length)
-//  ** Please enter a number between 8-128
-
-
-// function to validate length is a number
-
-
-// function for copying to the clipboard
-
-
-
-
-// Get references to the #generate element
+// ********************************************************* 
+// add generate code that was provided
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// create array of all characters that can be included
+// uppercase || lowercase || numbers || special  
+var upperChar = 'abcdefghijklmnopqrstuvwxyz';
+var lowerChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var number = '1234567890';
+var symbol = '!@#$^&%*()+=-[]{}~|:<>?,.';
+
+// Function to generate the password
 function writePassword() {
-  var password = generatePassword();
+  
+  }
+
+  // confirm uppercase letter
+  
+  // confirm lowercase letter
+  
+  // confirm number in password
+  
+  // confirm symbol in password
+  
+
+  // at least one confirm needs to be true to generate password
+  
+
+  // if statements - what is confirmed or true -- put that string of numbers in possibleChar 
+  // use += and for loop
+
+   
+
+  // add code that was provided 
   var passwordText = document.querySelector("#password");
+
   passwordText.value = password;
-}
+  // make sure to update HTML id from password to what I make this above
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+// var password = generatePassword();

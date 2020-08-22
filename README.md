@@ -1,6 +1,6 @@
 ## Create Password Generator
 ## Description
-This password generator was created to generate more secure strings of letters, and/or numbers, and/or special characters quickly that can be copied to the user's clipboard at the click of a button. This will create greater security for the end user.
+This password generator was created to generate more secure strings of letters, and/or numbers, and/or special characters quickly so that the password is strong and provides greater security for the end user. 
 
 ## Table of Contents
 * [Technologies](#technologies)
@@ -16,12 +16,15 @@ This password generator was created to generate more secure strings of letters, 
 
 
 ## Screenshot
-![Screenshot](./assets/images/03-javascript-homework-demo.png)
-
+![Screenshot]("./Assets/images/javascript-mockup.png")
 
 ## Requirements
-1. 
+1. When the user clicks the button to generate a password they are: 
+    ** Asked to pick a length of at least 8 characters and no more than 128 characters
+    ** Asked to specify the password criteria and choose uppercase, lowercase, numeric and/or special characters
+2. After each of these prompts is answered by the user, the password generator will validate the input and make sure at least one character type is selected
+3. Lastly, the password is then generated matching the selected criteria and written to the page
 
 ## Links
-* [Portfolio Deployed Site Link](https://bspiewak6.github.io/portfolio/) 
-* [Portfolio Github Repository](https://github.com/bspiewak6/portfolio)
+* [Portfolio Deployed Site Link](https://bspiewak6.github.io/password-generator/) 
+* [Portfolio Github Repository](https://github.com/bspiewak6/password-generator)
