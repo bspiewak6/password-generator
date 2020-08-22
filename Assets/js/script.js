@@ -25,20 +25,20 @@ var symbol = '!@#$^&%*()+=-[]{}~|:<>?,.';
 
 // Function to generate the password
 function writePassword() {
-  
-  }
 
   // confirm uppercase letter
-  
+  var upperConfirm = window.confirm("Click OK to confirm including uppercase letters.");
   // confirm lowercase letter
-  
+  var lowerConfirm = window.confirm("Click OK to confirm including lowercase letters.");
   // confirm number in password
-  
+  var numberConfirm = window.confirm("Click OK to confirm including numeric characters.");
   // confirm symbol in password
-  
+  var symbolConfirm = window.confirm("Click OK to confirm including special characters.");
 
   // at least one confirm needs to be true to generate password
-  
+  if (upperConfirm == false && lowerConfirm == false && numberConfirm == false && symbolConfirm == symbolConfirm) {
+    window.alert("Must select letter, number or symbol to continue.")
+  }
 
   // if statements - what is confirmed or true -- put that string of numbers in possibleChar 
   // use += and for loop
@@ -51,7 +51,7 @@ function writePassword() {
   passwordText.value = password;
   // make sure to update HTML id from password to what I make this above
 
-
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
