@@ -16,7 +16,7 @@ This password generator was created to generate more secure strings of letters, 
 
 
 ## Screenshot
-![Screenshot]("./Assets/images/javascript-mockup.png")
+![Screenshot]("./Assets/images/javascript-mockup.png") FIX SCREENSHOT
 
 ## Requirements
 1. When the user clicks the button to generate a password they are: 
