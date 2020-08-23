@@ -13,6 +13,8 @@
 // user will receive an alert with the password once its generated
 
 // ********************************************************* 
+
+
 // add generate code that was provided
 var generateBtn = document.querySelector("#generate");
 
@@ -32,7 +34,8 @@ function writePassword() {
 
   // confirm password length between 8 and 128 characters
   var passwordLength = window.prompt("How many characters would you like your password to contain? Please select a number between 8 and 128.")
-  console.log(passwordLength)
+  // console.log(passwordLength);
+
   // if password length is less than or equal to 8 || equal to or greater than 128 as a maximum inclusive of 8 and 128 -- use 7 and 129 so 8 and 128 appear
   if (passwordLength <= 7 || passwordLength >= 129) {
     window.alert("Not valid, please try again.")
@@ -41,37 +44,57 @@ function writePassword() {
 
   // confirm uppercase letter
   var upperConfirm = window.confirm("Click OK to confirm including uppercase letters.");
-  // console.log(upperConfirm)
+  // console.log(upperConfirm);
 
   // confirm lowercase letter
   var lowerConfirm = window.confirm("Click OK to confirm including lowercase letters.");
-  // console.log(lowerConfirm)
+  // console.log(lowerConfirm);
 
   // confirm number in password
   var numberConfirm = window.confirm("Click OK to confirm including numeric characters.");
-  // console.log(numberConfirm)
+  // console.log(numberConfirm);
 
   // confirm symbol in password
   var symbolConfirm = window.confirm("Click OK to confirm including special characters.");
-  // console.log(symbolConfirm)
+  // console.log(symbolConfirm);
 
   // at least one confirm needs to be true to generate password
   if (upperConfirm == false && lowerConfirm == false && numberConfirm == false && symbolConfirm == symbolConfirm) {
     window.alert("Must select letter, number or symbol to continue.")
-    // console.log(upperConfirm)
+    // console.log(upperConfirm);
   }
 
   // if statements - what is confirmed or true -- put that string of numbers in possibleChar 
   // use += and for loop
+  if (upperConfirm = true) {
+    possibleChar += upperChar
+  }
 
+  if (lowerConfirm = true) {
+    possibleChar += lowerChar
+  }
 
+  if (numberConfirm = true) {
+    possibleChar += number
+  }
+
+  if(symbolConfirm = true) {
+    possibleChar += symbol
+  }
+
+  // create for loop for randomness of the password
+  for (var i = 0; i <passwordLength; i++) {
+  generatePass += possibleChar.charAt(Math.floor(Math.random() * possibleChar.length));
+  console.log(generatePass)
+
+  }
 
   // add code that was provided 
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
   // make sure to update HTML id from password to what I make this above
-
+  
 }
 
 // Add event listener to generate button
