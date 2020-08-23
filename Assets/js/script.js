@@ -59,7 +59,7 @@ function writePassword() {
   // console.log(symbolConfirm);
 
   // at least one confirm needs to be true to generate password
-  if (upperConfirm === false && lowerConfirm === false && numberConfirm === false && symbolConfirm === false) {
+  if (upperConfirm == false && lowerConfirm == false && numberConfirm == false && symbolConfirm == false) {
     window.alert("Must select letter, number or symbol to continue.")
   }
 
