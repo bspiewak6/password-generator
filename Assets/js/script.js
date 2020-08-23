@@ -10,7 +10,7 @@
 
 // function will run and randomly select (x) character from a string that includes the selections
 
-// user will receive an alert with the password once its generated
+// user will see password in box on application once its generated
 
 // ********************************************************* 
 
@@ -40,7 +40,7 @@ function writePassword() {
   if (passwordLength <= 7 || passwordLength >= 129) {
     window.alert("Not valid, please try again.")
     return
-  } 
+  }
 
   // confirm uppercase letter
   var upperConfirm = window.confirm("Click OK to confirm including uppercase letters.");
@@ -65,37 +65,35 @@ function writePassword() {
   }
 
   // if statements - what is confirmed or true -- put that string of numbers in possibleChar 
-  // use += and for loop
-  if (upperConfirm = true) {
+  // use += inside for loop
+  if (upperConfirm == true) {
     possibleChar += upperChar
   }
 
-  if (lowerConfirm = true) {
+  if (lowerConfirm == true) {
     possibleChar += lowerChar
   }
 
-  if (numberConfirm = true) {
+  if (numberConfirm == true) {
     possibleChar += number
   }
 
-  if(symbolConfirm = true) {
+  if (symbolConfirm == true) {
     possibleChar += symbol
   }
+  // console.log(possibleChar);
 
   // create for loop for randomness of the password
-  for (var i = 0; i <passwordLength; i++) {
-  generatePass += possibleChar.charAt(Math.floor(Math.random() * possibleChar.length));
-  console.log(generatePass)
-
+  for (var i = 0; i < passwordLength; i++) {
+    generatePass += possibleChar.charAt(Math.floor(Math.random() * possibleChar.length));
+    console.log(generatePass);
   }
 
-  // add code that was provided 
   var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+  // update below to include password generator variable I created
+  passwordText.value = generatePass;
   // make sure to update HTML id from password to what I make this above
-  
-}
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
