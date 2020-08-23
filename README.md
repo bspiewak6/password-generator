@@ -27,4 +27,4 @@ This password generator was created to generate more secure strings of letters, 
 
 ## Links
 * [Portfolio Deployed Site Link](https://bspiewak6.github.io/password-generator/) 
-* [Portfolio Github Repository](https://github.com/bspiewak6/password-generator)
+* [Portfolio Github Repository](https://github.com/bspiewak6/password-generator/)
