@@ -59,9 +59,8 @@ function writePassword() {
   // console.log(symbolConfirm);
 
   // at least one confirm needs to be true to generate password
-  if (upperConfirm == false && lowerConfirm == false && numberConfirm == false && symbolConfirm == symbolConfirm) {
+  if (upperConfirm === false && lowerConfirm === false && numberConfirm === false && symbolConfirm === false) {
     window.alert("Must select letter, number or symbol to continue.")
-    // console.log(upperConfirm);
   }
 
   // if statements - what is confirmed or true -- put that string of numbers in possibleChar 
