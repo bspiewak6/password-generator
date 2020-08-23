@@ -26,5 +26,5 @@ This password generator was created to generate more secure strings of letters, 
 3. Lastly, the password is then generated matching the selected criteria and written to the page
 
 ## Links
-* [Portfolio Deployed Site Link](https://bspiewak6.github.io/password-generator/) 
-* [Portfolio Github Repository](https://github.com/bspiewak6/password-generator/)
+* [Password Generator Deployed Site Link](https://bspiewak6.github.io/password-generator/) 
+* [Password Generator Github Repository](https://github.com/bspiewak6/password-generator/)
